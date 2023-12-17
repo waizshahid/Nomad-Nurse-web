@@ -8,33 +8,39 @@ import "aos/dist/aos.css";
 import MovingText from 'react-moving-text'
 
 
-const AnimationsForChaining = ["swing", "flipSlowDown", "fadeInFromBottom", "jelly", "bounce","fadeInFromLeft","unfold" ]
-const AnimatedText = ["Industry Leading Pay", "Weekly Payments","Flexibity", "Bonuses" ,"Cosmopoliton Scrubs", "Discounted Dental Treatments","Interactive App"]
-
+const Data = [
+  { animation: 'fadeInFromLeft', text: 'Industry Leading Pay' },
+  { animation: 'fadeOutToRight', text: 'Industry Leading Pay' },
+  { animation: 'fadeInFromRight', text: 'Weekly Payments' },
+  { animation: 'fadeOutToBottom', text: 'Weekly Payments' },
+  { animation: 'fadeInFromBottom', text: 'Flexibility' },
+  { animation: 'fadeOutToTop', text: 'Flexibility' },
+  { animation: 'fadeInFromTop', text: 'Bonuses' },
+  { animation: 'fadeOutToLeft', text: 'Bonuses' },
+  { animation: 'fadeInFromLeft', text: 'Cosmopolitan Scrubs' },
+  { animation: 'fadeOutToBottom', text: 'Cosmopolitan Scrubs' },
+  { animation: 'fadeInFromBottom', text: 'Discounted Dental Treatments' },
+  { animation: 'fadeOutToRight', text: 'Discounted Dental Treatments' },
+  { animation: 'fadeInFromRight', text: 'Interactive App' },
+  { animation: 'fadeOutToLeft', text: 'Interactive App' },
+];
 const Nurses = () => {
 
   const [ counter, setCounter] = React.useState(0)
-  const [ animationType, setAnimationType ] = React.useState(AnimationsForChaining[0])
-  const [ animatedText, setAnimatedText ] = React.useState(AnimatedText[0])
-
-  const handleChainAnimation = () => {
-    if(counter==6){
-      setCounter(counter-6)
-      setAnimationType(AnimationsForChaining[counter-6])
-    setAnimatedText(AnimatedText[counter-6])
-    console.log("RUN")
-    }
-    else{
-      setCounter(counter+1)
-      setAnimationType(AnimationsForChaining[counter+1])
-    setAnimatedText(AnimatedText[counter+1])
-    }
-  }
-
+  const [ data, setData ] = React.useState(Data[0])
 
   useEffect(() => {
-    AOS.init({ duration: 800, easing: "ease-out" });
-  }, []);
+    const intervalId = setInterval(() => {
+      setCounter((prevCounter) => (prevCounter + 1) % Data.length);
+    }, 700);
+
+    return () => clearInterval(intervalId); // Clear interval on component unmount
+
+  }, []); // Empty dependency array to run effect only once on mount
+
+  useEffect(() => {
+    setData(Data[counter]);
+  }, [counter]);
   return (
     <div className="nurses-container">
       <div className="left-section1" data-aos="zoom-in" data-aos-duration="800">
@@ -68,17 +74,9 @@ const Nurses = () => {
         <div className="image-container1">
           {/* <img src={Img} alt="Industry Leading Pay" className="pay-image1" /> */}
           <div className="overlay1">
-          <MovingText
-           onAnimationEnd={handleChainAnimation}
-           type={animationType}
-              duration="1500ms"
-              delay="0s"
-              direction="normal"
-              timing="ease-in"
-              iteration="1"
-              fillMode="none">
-              {animatedText}
-            </MovingText>
+          <p className = {data.animation}>
+              {data.text}
+            </p>
             {/* <p className="overlay-text1">
               Industry
               <br /> Leading pay

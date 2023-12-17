@@ -100,6 +100,233 @@
   object-fit: cover;
   margin-left: 160px;
 }
+
+
+  .fadeInFromRight {
+    animation: fadeInFromRight 400ms ease-out;
+    animation-fill-mode: forwards;
+  }
+  
+  .fadeOutToBottom {
+    animation: fadeOutToBottom 400ms ease-in;
+    animation-fill-mode: forwards;
+  }
+  
+  .fadeInFromBottom {
+    animation: fadeInFromBottom 400ms ease-out;
+    animation-fill-mode: forwards;
+  }
+  
+  .fadeOutToTop {
+    animation: fadeOutToTop 400ms ease-in;
+    animation-fill-mode: forwards;
+  }
+  
+  .fadeInFromTop {
+    animation: fadeInFromTop 400ms ease-out;
+    animation-fill-mode: forwards;
+  }
+  
+  .fadeOutToLeft {
+    animation: fadeOutToLeft 400ms ease-in;
+    animation-fill-mode: forwards;
+  }
+  
+  .fadeInFromLeft {
+    animation: fadeInFromLeft 400ms ease-out;
+    animation-fill-mode: forwards;
+  }
+  
+  .fadeOutToRight {
+    animation: fadeOutToRight 400ms ease-in;
+    animation-fill-mode: forwards;
+  }
+
+  @-webkit-keyframes fadeInFromRight {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(200px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* fadeOutToBottom keyframes */
+  @-webkit-keyframes fadeOutToBottom {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(100px);
+    }
+  }
+
+  
+  
+  @keyframes fadeOutToBottom {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+  }
+  
+
+  @-webkit-keyframes fadeOutToBottom {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(100px);
+    }
+  }
+
+  
+  
+  @keyframes fadeOutToRight {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+  }
+  /* fadeInFromRight keyframes */
+  @-webkit-keyframes fadeOutFromRight {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(200px);
+    }
+  }
+  
+  @keyframes fadeInFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* fadeOutToTop keyframes */
+  @-webkit-keyframes fadeOutToTop {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(-100px);
+    }
+  }
+  
+  @keyframes fadeOutToTop {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+  }
+  
+  /* fadeInFromTop keyframes */
+  @-webkit-keyframes fadeInFromTop {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* fadeOutToLeft keyframes */
+  @-webkit-keyframes fadeOutToLeft {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateX(-200px);
+    }
+  }
+  
+  @keyframes fadeOutToLeft {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+  }
+  
+  /* fadeInFromLeft keyframes */
+  @-webkit-keyframes fadeInFromLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-200px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 /* @media (max-width: 480px) {
   .nurses-container {
     flex-direction: column;
