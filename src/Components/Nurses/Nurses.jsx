@@ -5,8 +5,33 @@ import Img from "../../Assests/Rectangle.png";
 import Img1 from "../../Assests/Vector.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import MovingText from 'react-moving-text'
+
+
+const AnimationsForChaining = ["swing", "flipSlowDown", "fadeInFromBottom", "jelly", "bounce","fadeInFromLeft","unfold" ]
+const AnimatedText = ["Industry Leading Pay", "Weekly Payments","Flexibity", "Bonuses" ,"Cosmopoliton Scrubs", "Discounted Dental Treatments","Interactive App"]
 
 const Nurses = () => {
+
+  const [ counter, setCounter] = React.useState(0)
+  const [ animationType, setAnimationType ] = React.useState(AnimationsForChaining[0])
+  const [ animatedText, setAnimatedText ] = React.useState(AnimatedText[0])
+
+  const handleChainAnimation = () => {
+    if(counter==6){
+      setCounter(counter-6)
+      setAnimationType(AnimationsForChaining[counter-6])
+    setAnimatedText(AnimatedText[counter-6])
+    console.log("RUN")
+    }
+    else{
+      setCounter(counter+1)
+      setAnimationType(AnimationsForChaining[counter+1])
+    setAnimatedText(AnimatedText[counter+1])
+    }
+  }
+
+
   useEffect(() => {
     AOS.init({ duration: 800, easing: "ease-out" });
   }, []);
@@ -41,14 +66,35 @@ const Nurses = () => {
         data-aos-duration="500"
       >
         <div className="image-container1">
-          <img src={Img} alt="Industry Leading Pay" className="pay-image1" />
+          {/* <img src={Img} alt="Industry Leading Pay" className="pay-image1" /> */}
           <div className="overlay1">
-            <p className="overlay-text1">
+          <MovingText
+           onAnimationEnd={handleChainAnimation}
+           type={animationType}
+              duration="1500ms"
+              delay="0s"
+              direction="normal"
+              timing="ease-in"
+              iteration="1"
+              fillMode="none">
+              {animatedText}
+            </MovingText>
+            {/* <p className="overlay-text1">
               Industry
               <br /> Leading pay
-            </p>
-            <img src={Img1} alt="Your Image" className="additional-image" />
+            </p> */}
+            {/* <img src={Img1} alt="Your Image" className="additional-image" /> */}
           </div>
+          {/* <MovingText
+              type="bounce"
+              duration="1000ms"
+              delay="0s"
+              direction="normal"
+              timing="ease-in"
+              iteration="5"
+              fillMode="none">
+              Industry Leading Pay
+            </MovingText> */}
         </div>
       </div>
     </div>
