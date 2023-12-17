@@ -1,0 +1,539 @@
+.nurses-container {
+  display: flex;
+  background-color: #f5f3ef;
+}
+
+.left-section1 {
+  flex: 1;
+  padding: 20px;
+}
+
+.logo1 {
+  width: 80px;
+  height: auto;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.left-section1 h2 {
+  margin-left: 30px;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+}
+.left-section1 p {
+  margin-left: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #222222;
+  font-size: 16px;
+  word-spacing: 0.5px;
+  letter-spacing: 0.1px;
+}
+.nurses-container button {
+  padding: 11px 60px;
+  font-size: 15px;
+  background-color: #ae9c7f;
+  color: #f3f4f6;
+  border: none;
+  border-radius: 8px;
+  margin-left: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.right-section1 {
+  flex: 1;
+}
+
+.image-container1 {
+  position: relative;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.pay-image1 {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: #9c9c9c1a; */
+  border-radius: 25px;
+  width: 542px; /* Set the width to match the image width */
+  height: 353px;
+  margin-top: 59px;
+  margin-left: 36px;
+}
+
+.overlay-text1 {
+  position: absolute;
+  text-align: center; /* Center the text horizontally */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.additional-image {
+  width: 220px;
+  margin-top: 230px;
+  object-fit: cover;
+  margin-left: 160px;
+}
+/* @media (max-width: 480px) {
+  .nurses-container {
+    flex-direction: column;
+  }
+
+  .left-section1,
+  .right-section1 {
+    padding: 5px; 
+  }
+
+  .logo1 {
+    margin-left: 210px; 
+    width: 50px;
+    margin-top: 10px;
+  }
+
+  .left-section1 h2 {
+    margin-left: 36px;
+    font-size: 28px; 
+  }
+
+  .left-section1 p {
+    margin-left: 0; 
+    text-align: center;
+    font-size: 11px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .nurses-container button {
+    margin-left: 150px; 
+    margin-bottom: 0px;
+  }
+
+  .additional-image {
+    margin-left: 0;
+  }
+  .left-section1 p {
+    color: #4b5563;
+  }
+  .overlay1 {
+    width: 380px;
+    height: 250px;
+    margin-left: 26px;
+    margin-top: 45px;
+  }
+  .overlay-text1 {
+    font-size: 20px;
+  }
+  .additional-image {
+    width: 150px;
+    margin-left: 115px;
+    margin-top: 160px;
+  }
+} */
+
+@media (max-width: 320px) {
+  .nurses-container {
+    flex-direction: column;
+    text-align: center !important;
+    padding: 0px !important;
+  }
+
+  .left-section1,
+  .right-section1 {
+    padding: 5px;
+  }
+
+  .logo1 {
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 6px;
+  }
+
+  .left-section1 h2 {
+    font-size: 18px;
+    text-align: center !important;
+    margin-left: 0px;
+  }
+
+  .left-section1 p {
+    text-align: center;
+    font-size: 10px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .nurses-container button {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    font-size: 10px;
+    padding: 10px 45px !important;
+  }
+  .pay-image1 {
+    margin-top: -14px;
+  }
+  .left-section1 p {
+    color: #4b5563;
+  }
+  .overlay1 {
+    width: 240px;
+    height: 160px;
+    margin-left: 14px;
+    margin-top: 0px;
+    border-radius: 12px !important;
+  }
+  .overlay-text1 {
+    font-size: 16px;
+  }
+  .additional-image {
+    width: 110px;
+    margin-left: 6px;
+    margin-top: 105px;
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+  .nurses-container {
+    flex-direction: column;
+    text-align: center !important;
+    padding: 0px !important;
+  }
+
+  .left-section1,
+  .right-section1 {
+    padding: 5px;
+  }
+
+  .logo1 {
+    width: 33px;
+    margin-top: 10px;
+    margin-left: 6px;
+  }
+
+  .left-section1 h2 {
+    font-size: 19px;
+    text-align: center !important;
+    margin-left: 0px;
+  }
+
+  .left-section1 p {
+    text-align: center;
+    font-size: 11px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .nurses-container button {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    padding: 9px 45px !important;
+  }
+  .pay-image1 {
+    margin-top: -14px;
+  }
+  .left-section1 p {
+    color: #4b5563;
+  }
+  .overlay1 {
+    width: 289px;
+    height: 190px;
+    margin-left: 18px;
+    margin-top: 4px;
+    border-radius: 12px !important;
+  }
+  .overlay-text1 {
+    font-size: 17px;
+  }
+  .additional-image {
+    width: 130px;
+    margin-left: 6px;
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+  .nurses-container {
+    flex-direction: column;
+    text-align: center !important;
+    padding: 0px !important;
+  }
+
+  .left-section1,
+  .right-section1 {
+    padding: 5px;
+  }
+
+  .logo1 {
+    width: 36px;
+    margin-top: 10px;
+    margin-left: 6px;
+  }
+
+  .left-section1 h2 {
+    font-size: 20px;
+    text-align: center !important;
+    margin-left: 0px;
+  }
+
+  .left-section1 p {
+    text-align: center;
+    font-size: 12px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  .nurses-container button {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    padding: 9px 45px !important;
+  }
+  .pay-image1 {
+    margin-top: -14px;
+  }
+  .left-section1 p {
+    color: #4b5563;
+  }
+  .overlay1 {
+    width: 330px;
+    height: 215px;
+    margin-left: 22px;
+    margin-top: 8px;
+    border-radius: 12px !important;
+  }
+  .overlay-text1 {
+    font-size: 20px;
+  }
+  .additional-image {
+    width: 140px;
+    margin-left: 6px;
+    margin-top: 136px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .nurses-container {
+    padding: 0px;
+  }
+  .logo1 {
+    width: 30px !important;
+    margin-left: 20px !important;
+    margin-top: 0px;
+  }
+  .left-section1 h2 {
+    font-size: 23px;
+    margin-left: 0px;
+    /* white-space: nowrap; */
+    margin-left: 20px !important;
+  }
+
+  .left-section1 p {
+    font-size: 11px !important;
+    margin-left: 20px !important;
+    margin-top: -7px !important;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-right: 22px !important;
+  }
+
+  .nurses-container button {
+    font-size: 12px !important;
+    margin-left: 20px !important;
+  }
+
+  .additional-image {
+    margin-left: 30px;
+  }
+  .pay-image1 {
+    margin-top: 30px !important;
+  }
+  .overlay1 {
+    width: 290px;
+    height: 190px;
+    margin-top: 48px !important;
+    margin-left: 17px !important;
+  }
+  .overlay-text1 {
+    font-size: 19px;
+  }
+  .additional-image {
+    margin-left: 70px;
+    margin-top: 122px;
+    width: 140px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nurses-container {
+    padding: 0px;
+  }
+  .logo1 {
+    width: 40px !important;
+    margin-left: 20px !important;
+    margin-top: 0px;
+  }
+  .left-section1 h2 {
+    font-size: 27px;
+    margin-left: 0px;
+    /* white-space: nowrap; */
+    margin-left: 20px !important;
+  }
+
+  .left-section1 p {
+    font-size: 11px !important;
+    margin-left: 20px !important;
+    margin-top: -5px !important;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-right: 22px !important;
+  }
+
+  .nurses-container button {
+    font-size: 12px !important;
+    margin-left: 20px !important;
+    margin-bottom: 45px;
+  }
+
+  .additional-image {
+    margin-left: 30px;
+  }
+  .pay-image1 {
+    margin-top: 30px !important;
+    /* width: 100%; */
+    height: 260px !important;
+    /* margin-top: 20px; */
+  }
+  .overlay1 {
+    width: 400px;
+    height: 220px;
+    margin-top: 50px !important;
+    margin-left: 25px !important;
+  }
+  .overlay-text1 {
+    font-size: 20px;
+  }
+  .additional-image {
+    margin-left: 120px;
+    margin-top: 140px;
+    width: 150px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .nurses-container {
+    padding: 0px;
+  }
+  .logo1 {
+    width: 50px !important;
+    margin-left: 40px !important;
+    margin-top: 0px;
+  }
+  .left-section1 h2 {
+    font-size: 35px;
+
+    /* white-space: nowrap; */
+    margin-left: 40px !important;
+  }
+
+  .left-section1 p {
+    font-size: 15px !important;
+    margin-left: 40px !important;
+    margin-top: -5px !important;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-right: 22px !important;
+    margin-right: 90px !important;
+  }
+
+  .nurses-container button {
+    font-size: 18px !important;
+    margin-left: 40px !important;
+    margin-bottom: 45px;
+  }
+
+  .additional-image {
+    margin-left: 30px;
+  }
+  /* .pay-image1 {
+    margin-top: 30px !important;
+    height: 260px !important;
+  } */
+  /* .overlay1 {
+    width: 400px;
+    height: 220px;
+    margin-top: 50px !important;
+    margin-left: 25px !important;
+  } */
+  .pay-image1 {
+    height: 350px;
+    margin-top: 37px;
+  }
+  .overlay-text1 {
+    font-size: 30px;
+    margin-top: -10px;
+  }
+  .additional-image {
+    margin-left: 170px;
+    margin-top: 210px;
+    width: 200px;
+  }
+}
+
+/* @media (min-width: 1367px) and (max-width: 1800px) {
+  .nurses-container {
+    padding: 0px; 
+  }
+  .logo1 {
+    width: 120px;
+    margin-left: 21px;
+    margin-top: 0px;
+  }
+  .left-section1 h2 {
+    font-size: 60px; 
+  }
+
+  .left-section1 p {
+    font-size: 21px;
+    max-width: 600px; 
+    overflow: hidden;
+  }
+
+  .nurses-container button {
+    font-size: 30px;
+    margin-bottom: 60px;
+  }
+
+  .additional-image {
+    margin-left: 200px; 
+    margin-top: 330px;
+    width: 340px;
+  }
+
+  .overlay-text1 {
+    font-size: 50px; 
+    max-width: 400px;
+    overflow: hidden;
+  }
+  .overlay1 {
+    width: 740px;
+    height: 485px;
+    margin-top: 150px;
+    margin-left: 50px;
+  }
+  .pay-image1 {
+    margin-top: 100px;
+  }
+} */

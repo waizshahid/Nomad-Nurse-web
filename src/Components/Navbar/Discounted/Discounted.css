@@ -1,0 +1,353 @@
+.discounted-container {
+  display: flex;
+  background-image: url("../../../Assests/Hands.png");
+  background-size: cover;
+  background-position: center; /* Center the background image */
+  margin-top: -38px;
+}
+
+.left-side2 {
+  flex: 1;
+  padding: 20px;
+}
+.logo2 {
+  width: 50px;
+  height: auto;
+  margin-top: 10px;
+}
+.right-side2 h2 {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+}
+.right-side2 p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #222222;
+  font-size: 15px;
+  word-spacing: 0.5px;
+  letter-spacing: 0.1px;
+  margin-top: 10px;
+  margin-right: 70px;
+}
+.right-side2 button {
+  padding: 11px 60px;
+  font-size: 15px;
+  background-color: #ae9c7f;
+  color: #f3f4f6;
+  border: none;
+  border-radius: 8px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.right-side2 {
+  flex: 1;
+  padding: 20px;
+}
+.left-side2 p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-top: 130px;
+  font-size: 35px;
+  margin-left: 200px;
+}
+.logo3 {
+  margin-left: 190px;
+  width: 240px;
+  margin-top: -180px;
+}
+/* @media (max-width: 480px) {
+  .discounted-container {
+    flex-direction: column;
+    background-size: cover;
+    background-position-x: 87%;
+    margin-top: -52px;
+  }
+
+  .left-side2 {
+    margin-bottom: 0px;
+  }
+
+  .left-side2 p {
+    margin-top: 60px;
+    margin-left: 160px;
+    font-size: 22px;
+  }
+
+  .logo3 {
+    margin-left: 153px;
+    margin-top: -130px;
+    width: 138px;
+  }
+  .logo2 {
+    margin-left: 200px;
+    width: 50px;
+    margin-top: -60px;
+  }
+  .right-side2 h2 {
+    font-size: 28px;
+    margin-left: 14px;
+    margin-top: 0px;
+  }
+  .right-side2 p {
+    font-size: 11px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+  }
+  .right-side2 button {
+    margin-left: 110px;
+    margin-bottom: 20px;
+  }
+} */
+@media (max-width: 320px) {
+  .discounted-container {
+    flex-direction: column;
+    background-size: cover;
+    background-position-x: 85%;
+    margin-top: -52px;
+    text-align: center;
+  }
+
+  .left-side2 {
+    margin-bottom: 0px !important;
+  }
+
+  .left-side2 p {
+    margin-top: 20px;
+    margin-left: 0px !important;
+    font-size: 17px;
+  }
+
+  .logo3 {
+    margin-left: 0px !important;
+    margin-top: -114px;
+    width: 107px;
+  }
+  .logo2 {
+    width: 30px;
+    margin-top: -120px;
+  }
+  .right-side2 h2 {
+    font-size: 18px;
+    margin-top: -40px;
+  }
+  .right-side2 p {
+    font-size: 10px;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 0px;
+  }
+  .right-side2 button {
+    margin-bottom: 22px;
+    font-size: 10px;
+    padding: 10px 45px;
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+  .discounted-container {
+    flex-direction: column;
+    background-size: cover;
+    background-position-x: 87%;
+    margin-top: -52px;
+    text-align: center;
+  }
+
+  .left-side2 {
+    margin-bottom: 0px !important;
+  }
+
+  .left-side2 p {
+    margin-top: 20px;
+    margin-left: 0px !important;
+    font-size: 19px;
+  }
+
+  .logo3 {
+    margin-left: 0px !important;
+    margin-top: -117px;
+    width: 113px;
+  }
+  .logo2 {
+    width: 33px;
+    margin-top: -120px;
+  }
+  .right-side2 h2 {
+    font-size: 19px;
+    margin-top: -40px;
+  }
+  .right-side2 p {
+    font-size: 11px;
+    text-align: center;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 0px;
+  }
+  .right-side2 button {
+    margin-bottom: 22px;
+    font-size: 10px;
+    padding: 10px 45px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+  .discounted-container {
+    flex-direction: column;
+    background-size: cover;
+    background-position-x: 87%;
+    margin-top: -52px;
+    text-align: center;
+  }
+
+  .left-side2 {
+    margin-bottom: 0px !important;
+  }
+
+  .left-side2 p {
+    margin-top: 20px;
+    margin-left: 0px !important;
+    font-size: 20px;
+  }
+
+  .logo3 {
+    margin-left: 0px !important;
+    margin-top: -120px;
+    width: 116px;
+  }
+  .logo2 {
+    width: 36px;
+    margin-top: -120px;
+  }
+  .right-side2 h2 {
+    font-size: 20px;
+    margin-top: -40px;
+  }
+  .right-side2 p {
+    font-size: 12px;
+    text-align: center;
+    margin-right: 17px;
+    margin-left: 17px;
+    margin-top: 0px;
+  }
+  .right-side2 button {
+    margin-bottom: 24px;
+    font-size: 10px;
+    padding: 10px 45px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .discounted-container {
+    display: flex;
+    background-size: cover;
+    background-position-x: 50%;
+    margin-top: -43px;
+    height: 380px;
+  }
+  .left-side2 {
+    flex: 50;
+  }
+  .left-side2 p {
+    margin-left: 110px;
+    margin-top: 135px;
+    font-size: 20px;
+  }
+  .logo3 {
+    width: 130px;
+    margin-top: -125px;
+    margin-left: 105px;
+  }
+  .logo2 {
+    width: 30px;
+    margin-top: 25px;
+    margin-left: 0px;
+  }
+  .right-side2 {
+    flex: 50;
+  }
+  .right-side2 h2 {
+    font-size: 23px;
+  }
+  .right-side2 p {
+    font-size: 11px;
+    font-weight: 400;
+    margin-top: -7px !important;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .discounted-container {
+    display: flex;
+    background-size: cover;
+    background-position-x: 50%;
+    margin-top: -43px;
+    height: 330px;
+  }
+  .left-side2 {
+    flex: 50;
+  }
+  .left-side2 p {
+    margin-left: 110px;
+    margin-top: 105px;
+    font-size: 25px;
+  }
+  .logo3 {
+    width: 150px;
+    margin-top: -140px;
+    margin-left: 107px;
+  }
+  .logo2 {
+    width: 40px;
+    margin-top: 5px;
+    margin-left: 0px;
+  }
+  .right-side2 {
+    flex: 50;
+  }
+  .right-side2 h2 {
+    font-size: 27px;
+  }
+  .right-side2 p {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: -7px !important;
+    line-height: 1.2;
+  }
+  .right-side2 button {
+    font-size: 12px;
+  }
+}
+
+/* @media (min-width: 1367px) and (max-width: 1800px) {
+  .logo2 {
+    width: 120px;
+    margin-top: 30px;
+  }
+  .right-side2 h2 {
+    font-size: 60px;
+    white-space: nowrap;
+  }
+  .right-side2 p {
+    font-size: 21px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+  .right-side2 button {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .left-side2 p {
+    font-size: 50px;
+  }
+  .logo3 {
+    width: 300px;
+    margin-top: -222px;
+    margin-left: 190px;
+  }
+} */
